@@ -1,0 +1,22 @@
+@use "../../styles/partials/mixins.scss" as *;
+.export{
+    button{
+        width:25%;
+        padding: 1.5rem;
+        margin-top:5rem;
+        background-color: rgb(183, 229, 229);
+        border:none;
+        color:rgb(100, 155, 155);
+        border-radius: 10px;
+        cursor:pointer;
+        transition: background-color 0.3s ease-in-out;
+        font-size: 1rem;
+        @include mobile{
+width:50%;
+        }
+        &:hover{
+            background-color:rgb(100, 155, 155);
+            color:white;
+        }
+    }
+}

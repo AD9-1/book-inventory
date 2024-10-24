@@ -1,0 +1,68 @@
+@use "../../styles/partials/mixins.scss" as *;
+
+.addbook {
+  &-form {
+    margin: auto;
+    margin-top: 3rem;
+    width: 40%;
+    background-color: rgb(183, 229, 229);
+    padding: 3rem;
+    &-section {
+      display: flex;
+      margin-bottom: 16px;
+      align-items: center;
+      @include mobile {
+        flex-direction: column;
+      }
+      label {
+        font-size: 13px;
+        flex: 0.6;
+        text-align: left;
+        width:100%;
+        @include mobile{
+          margin-bottom: 10px;;
+        }
+      }
+      input {
+        flex: 2;
+        border: 0;
+        padding: 10px;
+        border-radius: 5px;
+        outline: 0;
+        @include mobile{
+          width:90%;
+        }
+      }
+      .bookimage{
+        margin-left: 10px;
+        object-fit: cover;
+        border-radius: 5px;
+        outline: 0;
+        cursor: pointer;
+        @include mobile {
+          margin-left: 0;
+          width:100%;
+        }
+      }
+    }
+    .addbutton {
+      border: 0;
+      background-color: rgb(117, 174, 174);
+      padding: 1rem;
+      color: rgb(11, 29, 29);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  .message {
+    text-align: center;
+    background-color: rgb(183, 229, 229);
+    padding: 1rem;
+    width: 40%;
+    margin: auto;
+    margin-top: 16px;
+    @include mobile {
+      margin-top: 1rem;
+    }
+  }
+}
